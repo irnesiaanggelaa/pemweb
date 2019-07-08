@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="beranda_css.css">
+	<script type="text/javascript" src="jquery-3.4.1.min.js">
+	</script>
+<title>Beranda</title>
+</head>
+<body class="background">
+<div>
+<ul class="navigasi" id="nav">
+	<li><a onclick="openNav()" id="main">Menu</a></li>
+	<li><a href="file:///D:/FP/FinalProject/beranda.html">Beranda</a></li>
+	<li><a href="file:///D:/FP/FinalProject/parallax.html">Tentang</a></li>
+	<li><a href="file:///D:/FP/Profile%20Stting/1.html">Profile</a></li>
+  <li><a href="file:///D:/FP/kategori1/kategori/kategori.html">Kategori</a></li>
+  <li><a href="file:///D:/FP/FinalProject/gallery.html">Gallery</a></li>
+  <li><a href="file:///D:/FP/login/loginn.html">Masuk</a></li>
+
+	<li style="float:right"><a href="#about">QUENEES.</a></li>
+</ul>
+</div>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+        <a href="#">ALL</a>
+        <a href="#">MANEKIN</a>
+        <a href="#">LIPS</a>
+        <a href="#">REMOVER</a>
+        <a href="#">EYES</a>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "205px";
+  document.getElementById("#main").style.marginLeft = "205px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("#main").style.marginLeft= "0";
+}
+</script>
+
+<div class="topnav">
+  <div class="search-container">
+    <form>
+      <input type="text" placeholder="Search..">
+      <button type="submit">Cari</button>
+    </form>
+  </div>
+</div>
+
+
+	<div class="slideshow-container">
+	
+<div class="mySlides fade">
+	<img src="a.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+	<img src="b.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+	<img src="c.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+	<img src="d.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+	<img src="e.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+	<div class="numbertext"></div>
+	<img src="f.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+	<img src="g.jpg" style="width:100%">
+</div>
+
+</div>
+
+<div class="fott">
+	<center>
+		<h1><a href="file:///D:/FP/pemrog/request/Request.html">PESAN PRODUK</a></h1>
+	</center>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  if(slideIndex<=6){
+  slideIndex++;
+	slides[slideIndex-1].style.display = "block";
+	setTimeout(showSlides, 2500);}
+  else {
+  slideIndex=0;
+  showSlides();
+  } 
+}
+</script>
+<br>
+<div class="main">
+
+<div class="row">
+ 
+  
+  </div>
+  <div class="row">
+  <div class="column">
+    <div class="content">
+      <img class="zoom" src="a.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img class="zoom" src="b.jpg" style="width:100%">
+      </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img class="zoom" src="c.jpg" style="width:100%">
+      </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img class="zoom" src="d.jpg" style="width:100%">
+      </div>
+  </div>
+  
+</div>
+</div>
+
+<div class="ftr">
+<div class="btnfot"></div>
+<div id="containerfot">
+<div id="contfot">
+<div class="ftr_center">
+<h3>QUENEES.</h3>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
